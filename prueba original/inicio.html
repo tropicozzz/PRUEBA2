@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<div class="abs-center">
+    <form action="" class="form" id="formulario" onsubmit="return enviarFormulario2()">
+        <h3>Inicio de sesión</h3>
+        <div class="form-group">
+            Correo electrónico: <input type="email" class="form-control" id="email" required>
+            <span id="error-email" style="color: red;"></span><br>
+
+            Contraseña: <input type="password" class="form-control" id="contraseña" required>
+            <span id="error-contraseña" style="color: red;"></span><br>
+
+            Nombre: <input type="text" class="form-control" id="nombre" required>
+            <span id="error-nombre" style="color: red;"></span><br>
+
+            Apellido: <input type="text" class="form-control" id="apellido" required>
+            <span id="error-apellido" style="color: red;"></span><br>
+
+            Teléfono: <input type="tel" class="form-control" id="telefono" required>
+            <span id="error-telefono" style="color: red;"></span><br>
+
+            <p class="text-center"><a href="#">¿Olvidaste tu contraseña?</a></p>
+            <div class="mt-3">
+                <input type="submit" class="btn btn-success" value="Ingresar">
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- Bootstrap JS y dependencias -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+<!-- Script de validación -->
+<script src="validation.js"></script>
+
+</body>
+</html>
